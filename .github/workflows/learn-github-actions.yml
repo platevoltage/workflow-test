@@ -2,7 +2,7 @@ name: learn-github-actions
 run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
 env:
-  DAY_OF_WEEK: Monday
+  REACT_APP_DEMO: ${{ vars.REACT_APP_DEMO }}
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
